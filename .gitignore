@@ -1,0 +1,17 @@
+*.iml
+./ASUforia/gradle
+./ASUforia/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+./ASUforia/app/.cxx
+./ASUforia/build
+./ASUforia/app/build
