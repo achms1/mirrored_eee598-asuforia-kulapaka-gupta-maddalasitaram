@@ -1,2 +1,5 @@
 include ':app'
-rootProject.name = "My Application"
+rootProject.name = "ASUforia"
+
+include ':opencv'
+project(':opencv').projectDir = new File(opencvsdk + '/sdk')
