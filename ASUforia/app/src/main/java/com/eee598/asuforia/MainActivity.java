@@ -25,11 +25,7 @@ public class MainActivity extends CameraActivity implements CvCameraViewListener
         System.loadLibrary("native-lib");
     }
 
-    private static final String TAG = "OCVSample::Activity";
-
     private CameraBridgeViewBase mOpenCvCameraView;
-    private boolean mIsJavaCamera = true;
-    private MenuItem mItemSwitchCamera = null;
 
     private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
         @Override
@@ -37,7 +33,7 @@ public class MainActivity extends CameraActivity implements CvCameraViewListener
             switch (status) {
                 case LoaderCallbackInterface.SUCCESS:
                 {
-                    Log.i(TAG, "OpenCV loaded successfully");
+                    Log.i("TAG", "OpenCV loaded successfully");
                     mOpenCvCameraView.enableView();
                 } break;
                 default:
