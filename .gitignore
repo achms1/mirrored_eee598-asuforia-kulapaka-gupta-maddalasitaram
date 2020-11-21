@@ -15,3 +15,5 @@
 ./ASUforia/app/.cxx
 ./ASUforia/build
 ./ASUforia/app/build
+ASUforia/.idea
+ASUforia/sdk/
