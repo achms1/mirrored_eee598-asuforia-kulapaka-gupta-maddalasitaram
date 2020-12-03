@@ -47,7 +47,7 @@ public class MainActivity extends CameraActivity implements CvCameraViewListener
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        Log.i(TAG, "called onCreate");
+        Log.i("TAG", "called onCreate");
         super.onCreate(savedInstanceState);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_main);
@@ -70,10 +70,10 @@ public class MainActivity extends CameraActivity implements CvCameraViewListener
     {
         super.onResume();
         if (!OpenCVLoader.initDebug()) {
-            Log.d(TAG, "Internal OpenCV library not found. Using OpenCV Manager for initialization");
+            Log.d("TAG", "Internal OpenCV library not found. Using OpenCV Manager for initialization");
             OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION, this, mLoaderCallback);
         } else {
-            Log.d(TAG, "OpenCV library found inside package. Using it!");
+            Log.d("TAG", "OpenCV library found inside package. Using it!");
             mLoaderCallback.onManagerConnected(LoaderCallbackInterface.SUCCESS);
         }
     }
